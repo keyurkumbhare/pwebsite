@@ -1,0 +1,108 @@
+body {
+   font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    color: white;
+}
+
+.navbar-collapse{
+    text-align: center;
+}
+
+.navbar-brand {
+    padding-left: 30px;
+    font-weight: 700;
+}
+
+.navbar-nav{
+    margin-left: 31%;
+    align-self: center;
+    color: white;
+}
+
+.heading{
+    text-align: center;
+    padding-top: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav {
+    background-color: black;
+    text-transform: uppercase;
+}
+
+.navbar{
+    padding: 15px;
+}
+
+a:hover {
+  color: #43a047 !important;
+    text-decoration: none;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+
+}
+
+.fa {
+    size: 100px;
+    width: 60px;
+    height: 50px;
+
+}
+
+.footer-items {
+
+    width: 50%;
+    align-content: center;
+    display: inline;
+    padding: 25px;
+}
+
+.footer-menu {
+    margin: 10px;
+}
+
+.social-icons{
+    font-size: 30px;
+}
+
+#copyright{
+    font-size: 12px;
+}
+
+#quora:hover{
+    color: #aa2200 !important;
+}
+
+#twitter:hover{
+    color: #1DA1F2 !important;
+}
+
+#linkedin:hover{
+    color: #007bb5 !important;
+}
+
+#github:hover{
+    color: #757575 !important;
+}
+
+#facebook:hover{
+    color:#4064AD !important;
+}
+
+#instagram:hover{
+    color: transparent !important;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
