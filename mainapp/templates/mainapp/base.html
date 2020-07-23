@@ -14,8 +14,8 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark">
-  <a class="navbar-brand"  href="http://www.google.com">Keyur Kumbhare</a>
+<nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark">
+  <a class="navbar-brand"  href="{% url 'index' %}">Keyur Kumbhare</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -50,37 +50,35 @@
 
 
     {% block content %}
-        {% block heading %}
-            <h1 class="heading">Heading</h1>
-        {% endblock heading %}
-        <p style="padding: 0% 10% 0% 10%; font-weight: 500">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam aliquid consectetur, dignissimos dolorem eos excepturi inventore nam nulla officia perspiciatis, praesentium quibusdam quos, reiciendis rerum sunt unde vel velit!
-        </p>
+
+{#        <p style="padding: 0% 10% 0% 10%; font-weight: 500">#}
+{#        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam aliquid consectetur, dignissimos dolorem eos excepturi inventore nam nulla officia perspiciatis, praesentium quibusdam quos, reiciendis rerum sunt unde vel velit!#}
+{#        </p>#}
     {% endblock content%}
 
 </div>
 
 
-    <p id="some">Stuff</p>
+
 <div class="site-footer">
     <div class="footer-menu">
         <div class="footer-items">
             <a href="base.html">About</a>
         </div>
         <div class="footer-items">
-            <a href="base.html">Blog</a>
+            <a href="{% url 'home' %}">Blog</a>
         </div>
         <div class="footer-items">
-            <a href="base.html">Contact</a>
+            <a href="{% url 'contact' %}">Contact</a>
         </div>
         <div class="footer-items">
-            <a href="base.html">Newsletter</a>
+            <a href="{% url 'newsletter' %}">Newsletter</a>
         </div>
         <div class="footer-items">
             <a href="base.html">Terms</a>
         </div>
         <div class="footer-items">
-            <a href="base.html">Privacy Policy</a>
+            <a href="{% url 'privacy' %}">Privacy Policy</a>
         </div>
 
     </div>
@@ -105,7 +103,7 @@
         </a>
     </div>
 
-    <div id="copyright">Copyright © 2020 <a href="https://keyurkumbhare.com">Keyur Kumbhare</a></div>
+    <div id="copyright">Copyright © 2020 <a href="{% url 'index' %}">Keyur Kumbhare</a></div>
 </div>
 
 

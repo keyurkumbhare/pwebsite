@@ -6,11 +6,15 @@ from mainapp.forms import ContactForm
 
 
 def index(request):
-    return render(request,'mainapp/base.html')
+    return render(request,'mainapp/home.html')
 
 
 def newsletter(request):
     return render(request,'mainapp/newsletter.html')
+
+
+def privacy(request):
+    return render(request,'mainapp/privacy-policy.html')
 
 
 def contact(request):

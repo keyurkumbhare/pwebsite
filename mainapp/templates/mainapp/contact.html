@@ -2,10 +2,16 @@
 
 
 {% block content %}
-<h1>Get in Touch</h1>
+<h1 class="heading">Get in Touch</h1>
 <form role="form" action="" method="post">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Submit</button>
 </form>
 {% endblock %}
+
+<style>
+    #id_subject {
+        padding: 20px;
+    }
+</style>
